@@ -6,9 +6,9 @@ This project began with the merging of pre-scraped datasets relating to the most
 
 To begin with datasheets were combined using VLOOKUP, INDEX & MATCH functions. Some descriptive statistics were then generated using   SUM, ROUNDAVERAGE, & COUNTIF functions; these yielded average ratings, total reviews, the average number of reviews per app, & the total number of free & paid apps in the dataset. 
 
-This was followed by a small project utilyzing PowerQuery to import car sales data from several sources into one sheet. I then returned to the play store dataset, transformed the date of last update into a integer & generated descriptive statistics for time since last update, number of reviews, & total downloads, as well as utilyzing new excel functions (TODAY(), NOW(), MIN(), MAX()). generating descriptive statistics with excels's analysis toolkit revealed incredibly high levels of kurtosis, with visual inspection of histograms suggesting a highly uneven distribution. For practice purposes a multivariate regression was conducted anyway, using total downloads as a DV and time since update & number of reviews as independent variables.  
+This was followed by a small project utilyzing PowerQuery to import car sales data from several sources into one sheet. I then returned to the play store dataset, transformed date of last update into an integer, & generated descriptive statistics for time since last update, number of reviews, & total downloads. Generating descriptive statistics with excels's analysis toolkit revealed incredibly high levels of kurtosis, with visual inspection of histograms suggesting a highly uneven distribution. For practice purposes a multivariate regression was conducted anyway, using total downloads as a DV and time since update & number of reviews as independent variables.  
 
-Somewhat predictably for a non-parametric sample simply jammed into an OLS regression, no p-value in the regression was greater than 0.85 (!), suggesting this ad-hoc model and its paths hold little predictive value when trying to identify factors related to total number of installs. 
+Somewhat predictably for a non-parametric sample simply jammed into an OLS regression, no p-value in the regression was greater than 0.85 (!), this providing little predictive value when trying to identify factors related to the total number of installs. 
 
 
 
