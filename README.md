@@ -8,9 +8,7 @@ To begin with datasheets were combined using VLOOKUP, INDEX & MATCH functions. S
 
 This was followed by a small project utilyzing PowerQuery to import car sales data from several sources into one sheet. I then returned to the play store dataset, transformed date of last update into an integer, & generated descriptive statistics for time since last update, number of reviews, & total downloads. Generating descriptive statistics with excels's analysis toolkit revealed incredibly high levels of kurtosis, with visual inspection of histograms suggesting a highly uneven distribution. For practice purposes a multivariate regression was conducted anyway, using total downloads as a DV and time since update & number of reviews as independent variables.  
 
-Somewhat predictably for a non-parametric sample jammed into an OLS regression, no p-value in the regression model was greater than 0.85 (!), with relationships between data therefore indistinguishable from chance occurrence. As such this model provides little predictive value when trying to identify factors related to the total number of installs. 
-
-
+Somewhat predictably for a non-parametric sample jammed into an OLS regression, no p-value in the regression model was greater than 0.85 (!), with relationships between data therefore indistinguishable from chance occurrence. Data cleaning in Excel yielded a second, only slightly leptokurtic sample, but this failed to find significance as well, though some errors in data filtering, combined with overly conservative pruning, will have contributed to error here. third time is the charm though. 
 
 
 
